@@ -15,9 +15,7 @@
  */
 
 /* strncpy:  copy at most n characters of t to s */
-void strncpy(char *s, const char *t, int n)
-{
-    while (*t && n-- > 0)
-        *s++ = *t++;
-    *s = '\0';
+void strncpy(char *s, const char *t, int n) {
+  while (*t && n-- > 0) *s++ = *t++;
+  *s = '\0';
 }

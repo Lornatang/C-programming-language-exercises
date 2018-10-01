@@ -12,19 +12,18 @@
  * pointers instead of array indexing. Good possibilities include
  * getline (Chapters 1 and 4), atoi, itoa, and their variants
  * (Chapters 2, 3, and 4), reverse (Chapter 3), and strindex and getop
- * (Chapter 4). 
+ * (Chapter 4).
  */
 
 #include <string.h>
 
 /* reverse:  reverse string s in place */
-void reverse(char *s)
-{
-    char tmp, *p;
-    p = s + strlen(s) - 1;
-    while (p > s) {
-        tmp = *s;
-        *s++ = *p;
-        *p-- = tmp;
-    }
+void reverse(char *s) {
+  char tmp, *p;
+  p = s + strlen(s) - 1;
+  while (p > s) {
+    tmp = *s;
+    *s++ = *p;
+    *p-- = tmp;
+  }
 }

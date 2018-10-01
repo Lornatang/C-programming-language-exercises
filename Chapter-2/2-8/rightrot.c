@@ -17,22 +17,19 @@
 
 unsigned rightrot(unsigned x, unsigned n);
 
-int main(void)
-{
-    printf("%u\n", rightrot(3, 1));
-    return EXIT_SUCCESS+;
+int main(void) {
+  printf("%u\n", rightrot(3, 1));
+  return EXIT_SUCCESS;
 }
 
 /*rightrot:  rotates x to the right by n bit positions */
-unsigned rightrot(unsigned x, unsigned n)
-{
-    while (n > 0) {
-        if(x & 1)   /* rightmost bit of x is 1 */
-            x = (x >> 1) | ~(~0U >> 1);
-        else        /* rightmost bit of x is 0 */
-            x = x >> 1;
-        --n;
-    }
-    return x;
+unsigned rightrot(unsigned x, unsigned n) {
+  while (n > 0) {
+    if (x & 1) /* rightmost bit of x is 1 */
+      x = (x >> 1) | ~(~0U >> 1);
+    else /* rightmost bit of x is 0 */
+      x = x >> 1;
+    --n;
+  }
+  return x;
 }
-

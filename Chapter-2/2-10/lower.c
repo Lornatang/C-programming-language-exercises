@@ -9,7 +9,7 @@
  * Exercise 2-9, page 51
  *
  * Rewrite the function lower, which converts upper case letters to
- * lower case, with a conditional expression instead of if-else. 
+ * lower case, with a conditional expression instead of if-else.
  */
 
 #include <stdio.h>
@@ -17,15 +17,11 @@
 
 int lower(int c);
 
-int main(void)
-{
-    putchar(lower('R'));
-    putchar('\n');
-    return EXIT_SUCCESS;
+int main(void) {
+  putchar(lower('R'));
+  putchar('\n');
+  return EXIT_SUCCESS;
 }
 
 /* lower:  convert c to lower case; ASCII only */
-int lower(int c)
-{
-    return ('A' <= c && c <= 'Z') ? c - 'A' + 'a' : c;
-}
+int lower(int c) { return ('A' <= c && c <= 'Z') ? c - 'A' + 'a' : c; }

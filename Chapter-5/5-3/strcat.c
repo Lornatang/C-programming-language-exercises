@@ -16,20 +16,18 @@
 #include <stdlib.h>
 
 /* strcat:  concatenate t to end of s; s must be big enough */
-void strcat(char *s, const char *t)
-{
-    while (*s)      /* find end of s */
-        s++;
-    while (*t)      /* copy t */
-        *s++ = *t++;
-    *s = '\0';
+void strcat(char *s, const char *t) {
+  while (*s) /* find end of s */
+    s++;
+  while (*t) /* copy t */
+    *s++ = *t++;
+  *s = '\0';
 }
 
-int main(void)
-{
-    char s[100] = "ab\0c";
-    char t[100] = "def";
-    strcat(s, t);
-    puts(s);
-    return EXIT_SUCCESS;
+int main(void) {
+  char s[100] = "ab\0c";
+  char t[100] = "def";
+  strcat(s, t);
+  puts(s);
+  return EXIT_SUCCESS;
 }

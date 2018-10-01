@@ -19,23 +19,20 @@
 
 unsigned setbits(unsigned x, int p, int n, int y);
 
-int main(void)
-{
-    printf("%u\n", setbits(170, 4, 3, 7));
-    return EXIT_SUCCESS;
+int main(void) {
+  printf("%u\n", setbits(170, 4, 3, 7));
+  return EXIT_SUCCESS;
 }
 
 /* getbits:  place n rightmost bits from position p at position y */
-unsigned setbits(unsigned x, int p, int n, int y)
-{
-    int i, mask, j;
-    /* The rightmost n bits of y. */
-    i = (x >> (y+1-n)) & ~(~0 << n);
-    /* A mask with zeros at the rightmost n bits of p. */
-    mask = ~(((1 << n)-1) << (p+1-n));
-    /* Make rightmost n bits of p zero ... */
-    j = mask & x;
-    /* ... and replace them with the rightmost n bits of y. */
-    return j | i << (p+1-n);
+unsigned setbits(unsigned x, int p, int n, int y) {
+  int i, mask, j;
+  /* The rightmost n bits of y. */
+  i = (x >> (y + 1 - n)) & ~(~0 << n);
+  /* A mask with zeros at the rightmost n bits of p. */
+  mask = ~(((1 << n) - 1) << (p + 1 - n));
+  /* Make rightmost n bits of p zero ... */
+  j = mask & x;
+  /* ... and replace them with the rightmost n bits of y. */
+  return j | i << (p + 1 - n);
 }
-
