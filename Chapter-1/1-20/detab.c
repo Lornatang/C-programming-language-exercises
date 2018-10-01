@@ -19,24 +19,21 @@
 
 #define TABWIDTH 8
 
-int main(void)
-{
-    int i;
-    int c, col, spaces;
+int main(void) {
+  int i;
+  int c, col, spaces;
 
-    col = 0;
-    while((c = getchar()) != EOF) {
-        if (c == '\t') {
-            spaces = TABWIDTH - col % TABWIDTH;
-            for (i = 0; i < spaces; ++i)
-                putchar(' ');
-            col = col + spaces;
-        } else {
-            putchar(c);
-            col = col + 1;
-            if (c == '\n')
-                col = 0;
-        }
+  col = 0;
+  while ((c = getchar()) != EOF) {
+    if (c == '\t') {
+      spaces = TABWIDTH - col % TABWIDTH;
+      for (i = 0; i < spaces; ++i) putchar(' ');
+      col = col + spaces;
+    } else {
+      putchar(c);
+      col = col + 1;
+      if (c == '\n') col = 0;
     }
-    return EXIT_SUCCESS;
+  }
+  return EXIT_SUCCESS;
 }

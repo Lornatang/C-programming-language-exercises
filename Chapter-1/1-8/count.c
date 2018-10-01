@@ -14,19 +14,18 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int main(void)
-{
-    int c, nb, nt, nl;
+int main(void) {
+  int c, nb, nt, nl;
 
-    nb = nt = nl = 0;
-    while ((c = getchar()) != EOF) {
-        if (c == ' ')
-            ++nb;
-        else if (c == '\t')
-            ++nt;
-        else if (c == '\n')
-            ++nl;
-    }
-    printf("%d %d %d\n", nb, nt, nl);
-    return EXIT_SUCCESS;
+  nb = nt = nl = 0;
+  while ((c = getchar()) != EOF) {
+    if (c == ' ')
+      ++nb;
+    else if (c == '\t')
+      ++nt;
+    else if (c == '\n')
+      ++nl;
+  }
+  printf("%d %d %d\n", nb, nt, nl);
+  return EXIT_SUCCESS;
 }
