@@ -56,6 +56,5 @@ int main() {
   printf("forty-two in hex     0x%X  \\x2A  %d\n", '\x2A', '\x2A');
   printf("\n");
   /* illegal escape sequence */
-  printf("invalid escape sequence    \\c    %d (%c)\n", '\c', '\c');
   return 0;
 }
