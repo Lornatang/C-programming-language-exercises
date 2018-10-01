@@ -38,7 +38,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int main(void) {
+int main() {
   /* legal escape sequences */
   printf("audible alert (bell) BEL   \\a     %d\n", '\a');
   printf("backspace            BS    \\b     %d\n", '\b');
@@ -57,5 +57,5 @@ int main(void) {
   printf("\n");
   /* illegal escape sequence */
   printf("invalid escape sequence    \\c    %d (%c)\n", '\c', '\c');
-  return EXIT_SUCCESS;
+  return 0;
 }
