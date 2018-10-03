@@ -19,7 +19,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int main(void) {
+int main() {
   printf("\nchar:\n");
   printf("Size of char: %d bits\n", CHAR_BIT);
   printf("Maximum value of char: %d\n", CHAR_MAX);
