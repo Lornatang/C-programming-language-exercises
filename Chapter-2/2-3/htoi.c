@@ -25,7 +25,7 @@ int main() {
   for (i = 0; (c = getchar()) != '\n'; i++) s[i] = c;
   s[i] = '\0';
   printf("%s: %d\n", s, htoi(s));
-  return EXIT_SUCCESS;
+  return 0;
 }
 
 /* htoi:  convert hexdicimal string s to integer */

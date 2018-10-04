@@ -21,13 +21,13 @@
 
 void squeeze(char s1[], char s2[]);
 
-int main(void) {
+int main() {
   char s1[] = "abcdef";
   char s2[] = "bdf";
   squeeze(s1, s2);
   printf("%s\n", s1);
 
-  return EXIT_SUCCESS;
+  return 0;
 }
 
 /* squeeze:  delete all characters from s1 that match any in s2 */
