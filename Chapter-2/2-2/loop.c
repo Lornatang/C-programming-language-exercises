@@ -40,5 +40,5 @@ int main(void) {
   s[i] = '\0';       /* Terminate the string, */
   printf("%s\n", s); /* and print it. */
 
-  return EXIT_SUCCESS;
+  return 0;
 }

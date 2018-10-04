@@ -19,7 +19,7 @@
 
 int htoi(char s[]);
 
-int main(void) {
+int main() {
   char s[1024];
   int i, c;
   for (i = 0; (c = getchar()) != '\n'; i++) s[i] = c;
