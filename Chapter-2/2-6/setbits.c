@@ -19,7 +19,7 @@
 
 unsigned setbits(unsigned x, int p, int n, int y);
 
-int main(void) {
+int main() {
   printf("%u\n", setbits(170, 4, 3, 7));
   return EXIT_SUCCESS;
 }

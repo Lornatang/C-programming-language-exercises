@@ -19,7 +19,7 @@
 
 int any(char s1[], char s2[]);
 
-int main(void) {
+int main() {
   char s1[] = "abcdef";
   char s2[] = "def";
   printf("%d\n", any(s1, s2));
