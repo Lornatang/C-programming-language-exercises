@@ -23,7 +23,7 @@ int bitcount(unsigned x);
 
 int main(void) {
   printf("%d\n", bitcount(0777));
-  return EXIT_SUCCESS;
+  return 0;
 }
 
 /* bitcount:  count set bits in x */

@@ -19,7 +19,7 @@ unsigned rightrot(unsigned x, unsigned n);
 
 int main(void) {
   printf("%u\n", rightrot(3, 1));
-  return EXIT_SUCCESS;
+  return 0;
 }
 
 /*rightrot:  rotates x to the right by n bit positions */

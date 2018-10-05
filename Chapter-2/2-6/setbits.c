@@ -21,7 +21,7 @@ unsigned setbits(unsigned x, int p, int n, int y);
 
 int main() {
   printf("%u\n", setbits(170, 4, 3, 7));
-  return EXIT_SUCCESS;
+  return 0;
 }
 
 /* getbits:  place n rightmost bits from position p at position y */

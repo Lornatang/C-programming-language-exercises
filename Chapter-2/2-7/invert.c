@@ -20,7 +20,7 @@ unsigned invert(unsigned x, int p, int n);
 
 int main(void) {
   printf("%u\n", invert(240, 4, 3));
-  return EXIT_SUCCESS;
+  return 0;
 }
 
 /* invert:  returns x with n bits that begin at position p inverted */

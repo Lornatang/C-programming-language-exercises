@@ -20,7 +20,7 @@ int lower(int c);
 int main(void) {
   putchar(lower('R'));
   putchar('\n');
-  return EXIT_SUCCESS;
+  return 0;
 }
 
 /* lower:  convert c to lower case; ASCII only */
