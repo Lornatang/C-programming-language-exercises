@@ -36,7 +36,7 @@ int main(int argc, char **argv) {
     printf("Unknown name. I'm confused.\n");
     exit(-1);
   }
-  return EXIT_SUCCESS;
+  return 0;
 }
 
 /* splitpath:  returns file-name of without path */

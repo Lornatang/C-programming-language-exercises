@@ -43,7 +43,7 @@ FILE *fopen(char *name, char *mode) {
   return fp;
 }
 
-int main(void) {
+int main() {
   FILE *fp;
   char mode;
   mode = 'w';
