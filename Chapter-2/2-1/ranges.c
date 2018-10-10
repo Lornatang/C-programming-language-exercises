@@ -39,5 +39,5 @@ int main() {
   printf("Maximum value of short: %d\n", SHRT_MAX);
   printf("Minimum value of short: %d\n", SHRT_MIN);
   printf("Maximum value of unsigned short: %u\n", USHRT_MAX);
-  return EXIT_SUCCESS;
+  return 0;
 }
