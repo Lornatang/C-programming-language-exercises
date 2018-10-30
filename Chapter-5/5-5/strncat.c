@@ -16,10 +16,9 @@
 
 /* strcat:  concatenate at most n characters of t to the end of s; s
             must be big enough */
-void strcat(char *s, const char *t, int n) {
-  while (*s) /* find end of s */
-    s++;
-  while (*t && n-- > 0) /* copy at most n characters of t */
-    *s++ = *t++;
+
+void strCat(char *s, const char *t, int n) {
+  while (*s) s++;
+  while (*t && n-- > 0) *s++ = *t++;
   *s = '\0';
 }
