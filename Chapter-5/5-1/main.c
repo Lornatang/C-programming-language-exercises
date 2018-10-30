@@ -30,5 +30,5 @@ int main(void) {
     printf("end of file\n");
   else
     printf("wtf happend?\n");
-  return EXIT_SUCCESS;
+  return 0;
 }
