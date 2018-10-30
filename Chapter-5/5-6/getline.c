@@ -12,21 +12,20 @@
  * pointers instead of array indexing. Good possibilities include
  * getline (Chapters 1 and 4), atoi, itoa, and their variants
  * (Chapters 2, 3, and 4), reverse (Chapter 3), and strindex and getop
- * (Chapter 4). 
+ * (Chapter 4).
  */
 
 #include <stdio.h>
 
 /* getline:  get line into s, return length */
-int getline(char *s, int lim)
-{
-    char c, *p;
-    
-    p = s;  /* point p to s */
-    while (--lim > 0 && (c = getchar()) != EOF && c != '\n')
-        *s++ = c;
-    if (c == '\n')
-        *s++ = c;
-    *s = '\0';
-    return s - p;
+int getLine(char *s, int lim) {
+  char c, *p;
+
+  p = s;
+  while (lim-- > 0 && (c = getchar()) != EOF && c != '\n') *s++ = c;
+  if (c == '\n') *s++ = c;
+  *s = '\0';
+  return s - p;
 }
+
+int main(void) { return 0; }

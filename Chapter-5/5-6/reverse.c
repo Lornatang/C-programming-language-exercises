@@ -15,6 +15,7 @@
  * (Chapter 4).
  */
 
+#include <stdio.h>
 #include <string.h>
 
 /* reverse:  reverse string s in place */
@@ -26,4 +27,11 @@ void reverse(char *s) {
     *s++ = *p;
     *p-- = tmp;
   }
+}
+
+int main(void) {
+  char a[100] = "Hello World!";
+  reverse(a);
+  printf("String %s", a);
+  return 0;
 }
