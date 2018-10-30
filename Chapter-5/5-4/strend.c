@@ -34,8 +34,8 @@ int strend(const char *s, const char *t) {
 }
 
 int main(void) {
-  char s[100] = "abcdef\0xyz";
-  char t[100] = "def\0klm";
+  char s[100] = "abcdef";
+  char t[100] = "def";
   printf("%d\n", strend(s, t));
-  return EXIT_SUCCESS;
+  return 0;
 }
