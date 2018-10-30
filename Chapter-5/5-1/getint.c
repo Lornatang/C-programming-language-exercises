@@ -17,22 +17,23 @@
 #include <stdio.h>
 #include "getch.h"
 
-/* getint:  get next integer from input into *pn */
+/**
+ * getint:  get next integer from input into *pn
+ */
 int getint(int *pn) {
   int c, sign;
-
-  while (isspace(c = getch())) /* skip white space */
+  while (isspace(c = getch()))
     ;
   if (!isdigit(c) && c != EOF && c != '+' && c != '-') {
-    ungetch(c); /* it's not a number */
+    ungetch(c);
     return 0;
   }
   sign = (c == '-') ? -1 : 1;
   if (c == '+' || c == '-') {
     c = getch();
-    if (!isdigit(c)) {                /* + or - not followed by a digit */
-      ungetch(c);                     /* ungetch non-digit */
-      ungetch(sign == 1 ? '+' : '-'); /* ungetch + or - */
+    if (!isdigit(c)) {
+      ungetch(c);
+      ungetch(sign == 1 ? '+' : '-');
       return 0;
     }
   }
