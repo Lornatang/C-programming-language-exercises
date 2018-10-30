@@ -17,7 +17,7 @@
 /* strcat:  concatenate at most n characters of t to the end of s; s
             must be big enough */
 
-void strCat(char *s, const char *t, int n) {
+void strnCat(char *s, const char *t, int n) {
   while (*s) s++;
   while (*t && n-- > 0) *s++ = *t++;
   *s = '\0';
