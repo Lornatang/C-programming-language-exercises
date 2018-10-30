@@ -16,15 +16,25 @@
  */
 
 #include <ctype.h>
+#include <stdio.h>
 
 /* atoi:  convert string s to integer */
 int atoi(const char *s) {
   int n, sign;
 
-  while (isspace(*s)) s++; /* skip whitespace */
+  while (isspace(*s)) s++;
   sign = (*s == '-') ? -1 : 1;
-  if (*s == '+' || *s == '-') /* skip sign */
-    s++;
+  if (*s == '+' || *s == '-') s++;
   for (n = 0; isdigit(*s); s++) n = 10 * n + (*s - '0');
+
   return sign * n;
+}
+
+int main(void) {
+  int a;
+  char *s = "Helloworld";
+
+  a = atoi(s);
+  printf("%d", a);
+  return 0;
 }
